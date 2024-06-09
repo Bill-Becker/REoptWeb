@@ -1,0 +1,11 @@
+<h4> REopt Web </h4>
+<p v-text="msg"></p>
+<p>Enter a reference building or schedule-based facility type. Options include: </p>
+<div class="row">
+    <div class="st-col col-12 col-sm st-module">
+        <q-select id="imcch" v-model="load_chosen" :filled="true" :use-input="true" :hide-selected="false" :hide-dropdown-icon="true" :input-debounce="0" :options-dense="true" label="Load Type" :options="load_options"></q-select>
+    </div>
+</div>
+<p>Hourly load profile from building/load type selected, for Chicago, IL:</p>
+<plotly id="i19qi" data="W3siZ2J0eXBlIjoiVGltZWxpbmUiLCJ4IjoiMjAyNC0wMS0wMSwyMDI0LTAxLTAyLDIwMjQtMDEtMDMiLCJ4ZW5kIjpbIkVuZCBEYXRlIDEiLCJFbmQgRGF0ZSAyIiwiRW5kIERhdGUgMyJdLCJ5IjoiJF97bG9hZF9wcm9maWxlfSIsInR5cGUiOiJzY2F0dGVyIiwibW9kZSI6ImxpbmVzIiwibGluZSI6eyJ3aWR0aCI6IjEifSwibmFtZSI6IlRyYWNlIn1d" config="e30=" layout="eyJ0aXRsZSI6Ik15IENoYXJ0In0="></plotly>
+<p>You can change this view by editing the file <code>app.jl.html</code>.</p>
